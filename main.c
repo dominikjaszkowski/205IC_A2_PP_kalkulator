@@ -8,52 +8,48 @@ int main() {
 
     scanf("%f %c %f",&l1,&znak,&l2);
 
-    switch(znak)
-    {
-
+    switch(znak) {
         case '+':
-        {
+            {
 
-            wynik=l1+l2;
+            wynik = l1 + l2;
 
             break;
         }
 
         case '-':
-        {
+            {
 
-            wynik=l1-l2;
+            wynik = l1 - l2;
 
             break;
         }
 
         case '*':
-        {
+            {
 
-            wynik=l1*l2;
+            wynik = l1 * l2;
 
             break;
         }
 
         case '/':
-        {
+            {
 
-            wynik=l1/l2;
+            wynik = l1 / l2;
 
             break;
         }
 
         default:
-        {
+            {
 
             printf("zle dzialanie");
 
-            break;
+            return 0;
         }
     }
     printf("Wynik dzialania: %.1f",wynik);
-
-
 
     return 0;
 }
