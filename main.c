@@ -10,28 +10,28 @@ int main() {
     scanf("%d %c %d", &l1, &znak, &l2);
 
     switch (znak) {
-        case '+': {
+        case '+':
 
             wynik = l1 + l2;
 
             break;
-        }
 
-        case '-': {
+
+        case '-':
 
             wynik = l1 - l2;
 
             break;
-        }
 
-        case '*': {
+
+        case '*':
 
             wynik = l1 * l2;
 
             break;
-        }
 
-        case '/': {
+
+        case '/':
             if (l1 == 0 || l2 == 0) {
                 wynik = 0;
                 break;
@@ -39,14 +39,14 @@ int main() {
                 wynik = (float) l1 / l2;
                 break;
             }
-        }
 
-        default: {
+
+        default:
 
             printf("zle dzialanie");
 
             return 0;
-        }
+
     }
     printf("Wynik dzialania: %.1f", wynik);
 
